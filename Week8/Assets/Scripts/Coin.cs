@@ -6,8 +6,9 @@ public class Coin : MonoBehaviour
 {
     void OnTriggerEnter(Collider col)
     {
-        if(col.tag == "Player")
+        if(col.CompareTag("Player"))
         {
+            FindObjectOfType<UpdateScore>().IncreaseScore(1);
             Destroy(gameObject);
         }
     }
