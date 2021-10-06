@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UpdateScore : MonoBehaviour
 {
+    [SerializeField]
+
     public Text scoreText;
     private float coinScore;
 
