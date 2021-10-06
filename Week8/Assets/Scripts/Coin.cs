@@ -11,5 +11,10 @@ public class Coin : MonoBehaviour
             FindObjectOfType<UpdateScore>().IncreaseScore(1);
             Destroy(gameObject);
         }
+        if(col.CompareTag("Player2"))
+        {
+            FindObjectOfType<UpdatePlayer2Score>().IncreaseScore(1);
+            Destroy(gameObject);
+        }
     }
 }
